@@ -13,7 +13,7 @@ int main(void)
 	 *print out digit from 1 - 10
 	 * @ch++: this increment the data
 	 */
-	for (ch = 1; ch <= 9; ch++)
+	for (ch = 0; ch <= 9; ch++)
 	{
 		printf("%d", ch);
 	}
