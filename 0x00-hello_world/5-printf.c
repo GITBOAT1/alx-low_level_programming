@@ -1,11 +1,7 @@
 #include <stdio.h>
 /**
- * function_name - Short description, single line
- * @parameterx: Description of parameter x
-(* a blank line
-* Description: Longer description of the function)?
-(* section header: Section description)*
-* Return: returned 0 value meaning a sucess
+ * Main: contro the flow of statements
+ * Return: returned 0 value meaning a sucess
 */
 int main(void)
 {
