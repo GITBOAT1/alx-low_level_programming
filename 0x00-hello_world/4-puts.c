@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
+ * main - control the flow of statements
+ * @void: which holds noting
  *
- * main - This is a longer description for main.
- * @void: this is a default
- *
- * Return: The main return a 0 for succes
+ * Return: returned 0 value meaning a sucess
  */
 
 int main(void)
