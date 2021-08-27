@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main controls the flow of the program
+ * main-controls the flow of the program
  * @void: this is an empty variable
  * Return: this confirm the success of opration
  */
@@ -14,7 +14,8 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+
+	/*check to see of its positive ot negative */
 	if (n > 0)
 		printf("%d is positive", n);
 	else if (n == 0)
