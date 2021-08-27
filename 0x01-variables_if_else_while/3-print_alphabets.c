@@ -10,18 +10,18 @@ int main(void)
 
 	char ch;
 	/**
-         *Alphabets from a - z
-         * @ch++: this increment the data
-         */
+	 *Alphabets from a - z
+	 * @ch++: this increment the data
+	 */
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar (ch);
 	}
 
 	/**
-         *Alphabets from A - Z
-         * @ch++: this increment the data
-         */
+	 *Alphabets from A - Z
+	 * @ch++: this increment the data
+	 */
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		putchar (ch);
