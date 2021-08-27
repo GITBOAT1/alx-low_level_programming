@@ -8,7 +8,7 @@
 int main(void)
 {
 
-        char ch;
+	char ch;
 	/**
 	 *Alphabets from a - z
 	 * @ch++: this increment the data
