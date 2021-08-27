@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
- * main - controls the statement flow
- * @void: holds nothing.
- * Return - if it return with 0 execution succdss else flail
-**/
+ * main - control the flow of statements
+ * @void: which holds noting
+ *
+ * Return: returned 0 value meaning a sucess
+ */
 
 int main(void)
 {
-	printf("Size of a char: %d byte(s)\n",sizeof(char));
-	printf("Size of a int: %d byte(s)\n",sizeof(int));
-	printf("Size of a long int: %d byte(s)\n",sizeof(long int));
-	printf("Size of a long long: %d byte(s)\n",sizeof(long long int));
-	printf("Size of a float: %d byte(s)\n",sizeof(float));
-	return 0;
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of a int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
 }
