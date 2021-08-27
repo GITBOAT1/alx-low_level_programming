@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * Main: contro the flow of statements
+ * main - control the flow of statements
+ * @void: which holds noting
+ *
  * Return: returned 0 value meaning a sucess
 */
 int main(void)
