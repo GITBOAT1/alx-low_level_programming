@@ -9,14 +9,14 @@ int main(void)
 {
 
         char ch;
-/**
- *Alphabets from a - z
- * @ch++: this increment the data
- */
-	for (ch='a'; ch<='z'; ch++)
+	/**
+	 *Alphabets from a - z
+	 * @ch++: this increment the data
+	 */
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar (ch);
 	}
 	putchar ('\n');
-	return(0);
+	return (0);
 }
