@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- * The main fuction prnt out to the cdreeen.
+/**
+ * The main fuction control the flow state.
  */
 int main(void)/*print to screen*/
 {
