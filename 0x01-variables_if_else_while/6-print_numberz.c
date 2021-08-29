@@ -10,7 +10,6 @@ int main(void)
 {
 
 	unsigned int ch;
-	
         /**
 	 *Alphabets from 1 -10
 	 * @ch++: this increment the data
