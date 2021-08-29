@@ -10,16 +10,16 @@ int main(void)
 {
 
 	unsigned int ch;
-	char array[] = "0123456789";
+	
         /**
 	 *Alphabets from 1 -10
 	 * @ch++: this increment the data
 	 */
 
 
-	for (ch = 0; ch <= 9; ch++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		putchar(array[ch]);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
