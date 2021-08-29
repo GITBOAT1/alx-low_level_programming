@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <assert.h>
+/**
+ * main - controls the flow of program
+ * @void: is an empty variable
+ * Return: this tell if program was succesful or nut
+ */
+
+int main(void)
+{
+
+	unsigned int ch;
+        /**
+	 *Alphabets from 1 -10
+	 * @ch++: this increment the data
+	 */
+
+		 const int max_precision = 1000000;
+		 int b = 123456789;
+		 int max = b * max_precision;
+
+		 assert(b > 0);
+
+		 while (b <= max && b >= 0)
+		 {
+			 putchar('0' + (b / max_precision) % 10);
+			 b *= 10;
+		 }
+
+		 putchar('\n');
+
+	for (ch = 0; ch <= 9; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
+}
