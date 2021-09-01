@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - print the alphabet 10x in a nested loop
+ * print_alphabet_x10 - print the alphabet 10x in a nested loop
  * @ch++: just incremet on every loop
  * Return: 0 means sucess
  */
