@@ -5,8 +5,7 @@
  * @ch++: just incremet on every loop
  * Return: 0 means sucess
  */
-
-int print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char ch;
 	int  ch1;
@@ -19,5 +18,4 @@ int print_alphabet(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
