@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print a sign of digit - or+
- * @c: just a variable for lower cas
+ * @n: just a variable from the input
  * Return: 0 means sucess
  */
 
