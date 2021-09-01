@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * abs - print absolute value
+ * _abs - print absolute value
  * @n: just a variable from the input
  * Return: 0 means sucess
  */
