@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - print 1 if its lower caxe
+ * _isalpha - print 1 if its lower caxe
  * @c: just a variable for lower cas
  * Return: 0 means sucess
  */
