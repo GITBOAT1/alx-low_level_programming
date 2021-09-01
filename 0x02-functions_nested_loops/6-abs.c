@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - print a sign of digit - or+
+ * abs - print absolute value
  * @n: just a variable from the input
  * Return: 0 means sucess
  */
@@ -14,7 +14,6 @@ int _abs(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(n);
 		return (0);
 	}
 	else
