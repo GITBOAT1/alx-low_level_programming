@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void jack_bauer - print the alphabet 10x in a nested loop
+ * times_table - print the alphabet 10x in a nested loop
  * @ch++: just incremet on every loop
  * Return: 0 means sucess
  */
@@ -22,7 +22,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				if ((la == 8) && (se == 8 || se == 0))
-				    _putchar(' ');
+					_putchar(' ');
 			}
 			if (se <= 2)
 			{
@@ -46,6 +46,10 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
+/**
+ * printnumber - print the numberd
+ * @n : just a variable
+ */
 
 void printnumber(int n)
 {
