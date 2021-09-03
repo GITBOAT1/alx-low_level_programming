@@ -32,7 +32,7 @@ void times_table(void)
 					_putchar(' ');
 			}
 			if ((hr == 1) && (la >= 3 && la <= 7))
-				putchar(' ');
+				_putchar(' ');
 			if ((hr == 2) && (la >= 2 && la <= 3))
 				_putchar(' ');
 			if ((hr == 4) && (la == 1))
