@@ -33,7 +33,10 @@ void jack_bauer(void)
 
 	}
 }
-
+/**
+ * printnumber - It purpose is to only print out num
+ * @n : as a passing int.
+ */
 void printnumber(int n)
 {
 
