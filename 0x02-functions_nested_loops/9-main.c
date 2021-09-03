@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	 void jack_bauer();
+	 times_table();
 	 return (0);
 }
