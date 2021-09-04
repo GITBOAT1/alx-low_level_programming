@@ -3,7 +3,7 @@
 
 /**
  * print_square - print line out number form 0-9
- * @n: supplied from the main to.
+ * @size: supplied from the main to.
  * Return: Always 0.
  */
 void print_square(int size)
