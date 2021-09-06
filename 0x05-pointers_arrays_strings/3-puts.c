@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _put - check the code
+ * _puts - check the code
  * @str: the hold a long string
  * Return: Always 0.
  */
