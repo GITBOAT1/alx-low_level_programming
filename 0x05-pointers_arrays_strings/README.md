@@ -1,0 +1,1 @@
+# The start of ALMIGHT POINTER #
