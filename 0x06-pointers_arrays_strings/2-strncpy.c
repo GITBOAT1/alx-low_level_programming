@@ -10,7 +10,6 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 
-	
 	int len, len2, i;
 
 	char j[100];
