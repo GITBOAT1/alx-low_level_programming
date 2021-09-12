@@ -10,8 +10,10 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 
-	char j[n];
+	
 	int len, len2, i;
+
+	char j[100];
 
 	len = 0;
 	while (*(dest + len) != '\0')
