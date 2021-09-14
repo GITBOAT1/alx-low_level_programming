@@ -6,6 +6,7 @@
  * _strchr - print the remaining charaters athr the sarch chart is found.
  * @s : charater to be search
  * @c : the charter we ater searching for
+ * Return: acharacter to the pointer
 */
 
 char *_strchr(char *s, char c)
