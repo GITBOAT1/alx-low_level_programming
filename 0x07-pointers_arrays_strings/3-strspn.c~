@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * _strspn - return the the length of the\
+ * @s1: the null terminated string to be scanned
+  *@accept the string containing the char match
+ * Return: Always 0.
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int len = 0;
+
+	if ((s == NULL) || (accept == NULL))
+	{
+		return (0);
+	}
+
+	while (*s && strchr(accept, *s++))
+	{
+		len++;
+	}
+	return (len);
+}
