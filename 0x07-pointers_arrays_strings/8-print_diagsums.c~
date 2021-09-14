@@ -1,0 +1,15 @@
+void print_diagsums(int *a, int size)
+{
+	int z, b;
+	unsigned int = a1 , a2;
+
+	z = 0, b = 0, b = size;
+	a1 = 0, a2 = 0;
+
+	for (z = 0; z < size; z ++)
+	{
+		a1 = a1 + a[z][z];
+		a2 = a2 + a[b][b];
+	}
+	printf("%d, %d\n", a1, a2);
+}
