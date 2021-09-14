@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _strchr - print the remaining charaters athr the sarch chart is found.
+ * _strchr - print the remaining charaters athr that is found.
  * @s : charater to be search
  * @c : the charter we ater searching for
+ * Return: always to char
 */
 
 char *_strchr(char *s, char c)
