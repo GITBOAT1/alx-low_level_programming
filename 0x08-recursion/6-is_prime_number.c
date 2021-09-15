@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * is_prime_number - check the code
  * @n: yes or no
