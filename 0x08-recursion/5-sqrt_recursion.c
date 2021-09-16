@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - check the code
- *
+ * @n: numer to make a squre root
  * Return: Always 0.
  */
 
