@@ -26,6 +26,10 @@ char *_strdup(char *str)
 	}
 
 	mem1 = malloc(length + 1);
+	if (mem == NULL)
+	{
+		return (NULL);
+	}
 	{
 		while (str[i] != '\0')
 		{
