@@ -18,11 +18,16 @@ char *create_array(unsigned int size, char c)
 	}
 
 
-	mem1 = malloc(size * sizeof(char));
+	mem1 = malloc(size);
+
+	if (mem1 == NULL)
+	{
+		return (NULL);
+	}
 	{
 		if (size > 0)
 		{
-			for (; size >= 0; size--)
+			for (; size > 0; size--)
 			{
 				mem1[size] = c;
 			}
