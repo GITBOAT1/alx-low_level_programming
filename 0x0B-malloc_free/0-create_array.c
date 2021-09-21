@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	}
 
 
-	mem1 = malloc(size * sizeof(char));
+	mem1 = malloc(size);
 	{
 		if (size > 0)
 		{
