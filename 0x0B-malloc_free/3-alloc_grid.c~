@@ -1,0 +1,31 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+ * str_concat - prints buffer in hexa
+ * @s1: the address of memory to print
+ * @s2: for chaecker sake  the size of the memory to print
+ *
+ * Return: Nothing.
+ */
+
+int **alloc_grid(int width, int height)
+{
+	int *ptr, **arr;
+
+	len = sizeof(int *) * width + sizeof(int) * height * width;
+	arr = (int **)malloc(len);
+
+	ptr = (int *)(arr + height);
+
+	for ( i = 0; i < height; i++)
+		arr[i] = (ptr + width * i);
+
+	for (i = 0; i < width; i++)
+		for (j = 0; j < height; j++)
+			arr[i][j] = ++count;
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			arr[i][j] = 0;
+
+	return arr;
+}
