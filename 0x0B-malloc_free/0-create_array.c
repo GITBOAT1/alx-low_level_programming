@@ -19,11 +19,6 @@ char *create_array(unsigned int size, char c)
 
 
 	mem1 = malloc(size * sizeof(char));
-
-	if (mem1 == NULL)
-	{
-		return (NULL);
-	}
 	{
 		if (size > 0)
 		{
