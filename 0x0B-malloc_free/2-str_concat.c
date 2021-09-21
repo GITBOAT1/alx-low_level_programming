@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		len += 1;
 	}
 	sum = length + len;
-	mem1 = malloc(sum + 2);
+	mem1 = malloc(sum + 1);
 	if (mem1 == NULL)
 		return (NULL);
 	{
