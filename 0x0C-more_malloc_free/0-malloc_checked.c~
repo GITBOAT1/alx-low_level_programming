@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+
+void *malloc_checked(unsigned int b)
+{
+	unsigned int *a;
+
+	a = malloc(b);
+	if (if a == NULL)
+	{
+		return (98);
+	}
+	return (a);
+}
