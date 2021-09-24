@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - check the code
+ *
+ * return: always 0
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+
+	str = malloc(sizeof(s1));
+	if (!str)
+	{
+		return (NULL);
+	}
+	printf("the length of s1 %d", str);
+	return (str);
+}
