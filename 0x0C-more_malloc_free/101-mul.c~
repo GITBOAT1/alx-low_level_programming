@@ -1,0 +1,38 @@
+#include "main.h"
+
+/**
+ * main - check the code for
+ * @argv: is the counter
+ * @argc: is the number of arg
+ * Return: Always 0.
+ */
+
+int main(int argv, char **argc)
+{
+	char e[] = "Error";
+	int l;
+// mul, num , num1;
+
+	printf("hello here");
+	l = 0;
+	if (argv < 3)
+	{
+		while (e[l] != '\0')
+		{
+			_putchar(e[l]);
+			l = l + 1;
+		}
+		_putchar('\n');
+		exit(98);
+	}
+
+	//num  = atoi(argc[2]);
+//	num1 = atoi(argc[3]);
+
+	printf("hello");
+
+
+//	mul = num + num1;
+
+	return (0);
+}
