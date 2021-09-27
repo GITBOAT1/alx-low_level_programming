@@ -6,6 +6,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct dog - this create a struct for dog.
+ * @name: the name for the dog
+ * @owner: the owner
+ * @age:  how old is the dog
+ * Return: Always 0.
+ */
 struct dog
 {
 	char *name;
