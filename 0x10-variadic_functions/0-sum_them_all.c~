@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "variadic_functions.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int sum_them_all(const unsigned int n, ...)
+{
+	va_lsit ap;
+	int i, sum;
+
+	sum = 0;
+	var_start(ap, n);
+
+	while ( va_arg )
+	{
+		sum += va_arg(ap, int);
+	}
+	printf("sum %d \n", sum);
+}
