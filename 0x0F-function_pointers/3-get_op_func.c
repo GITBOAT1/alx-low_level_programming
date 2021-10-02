@@ -1,4 +1,7 @@
 #include "3-calc.h"
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * get_op_func - the main cal
  *
@@ -20,12 +23,15 @@ int (*get_op_func(char *s))(int a, int b)
 	int i;
 
 	i = 0;
-	while (ops[i][0].op != s || (!ops[i][0].op))
+	while (ops[i].op != NULL)
 	{
-		i = 1 + 1;
+
+		if (strcmp(s, ops[i].op)== 0)
+			break;
+		i++;
+
+
 	}
-	if (ops[i])
-	{
-		return (ops[i][1].f(a, b));
-	}
+
+	return (ops[i].f);
 }
