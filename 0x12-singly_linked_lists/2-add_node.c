@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - create a node and initialize it
+ * add_node - create a node and initialize it at the end
  * @head:The node to start from
  * @str: the string to store to the node
  * Return: the created node.
