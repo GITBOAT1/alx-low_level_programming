@@ -1,0 +1,17 @@
+#include "lists.h"
+
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t tmp;
+
+	tmp = malloc(sizeof(head));
+	if(!tmp)
+		return (NULL);
+	tmp->n = n;
+	tmp->next = NULL;
+
+	if(h != NULL)
+		tmp->next = *head;
+	h = tmp;
+	return (*h);
+}
