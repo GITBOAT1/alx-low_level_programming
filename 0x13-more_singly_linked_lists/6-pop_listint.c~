@@ -1,0 +1,23 @@
+#include "lists.h"
+
+
+/**
+ * free_listint2 - simpe func to free all nodes
+ * @head: the list for freeing.
+ *
+ */
+
+int pop_listint(listint_t **head)
+{
+	listint_t  *tmp, *_head;
+
+	tmp = NULL;
+	_head = *head;
+	if (_head ==  NULL)
+		return (0);
+	tmp = _head->next;
+	free(_head);
+	_head = tmp;
+
+	return (*head = head);
+}
