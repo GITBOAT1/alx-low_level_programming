@@ -1,0 +1,23 @@
+#include "lists.h"
+
+
+/**
+ * free_listint - simpe func to free all nodes
+ * @head: the list for freeing.
+ *
+ */
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+
+{
+	listint_t  *tmp;
+
+	tmp = NULL;
+	for (i = 0; i < index; i++)
+	{
+		head = head->next;
+	}
+	if (head->next != NULL)
+		tmp = head;
+	return (tmp->n);
+}
