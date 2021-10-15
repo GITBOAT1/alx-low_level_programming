@@ -1,0 +1,26 @@
+#include "main.h"
+/**
+ * print_binary - convert binay to int
+ * @n: number to conver
+ * Return: the dec or 0 when failed
+ * Calculate XOR of A and B. a_xor_b = A ^ B
+ * Count the set bits in the above calculated XOR result.
+ * countSetBits(a_xor_b)
+*/
+int count_Bits(int n)
+{
+	int count = 0;
+	while (n)
+	{
+		count += n & 1;
+		n >>= 1;
+	}
+	return count;
+}
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
+{
+
+	return count_Bits(n^m);
+
+}
