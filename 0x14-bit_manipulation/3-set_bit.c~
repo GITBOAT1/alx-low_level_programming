@@ -1,7 +1,7 @@
 #include  "main.h"
 
 /**
- * get_bit - check the code
+ * set_bit - set a certain number to an index provided
  * @n: This is the number for search
  * @index: what position to search
  * Return: Always 1 or zero.
@@ -11,7 +11,7 @@
  * 1 will tell you if the bit is set.
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	return ((n >> index) & 1);
+	return (*n |= 1 << index);
 }

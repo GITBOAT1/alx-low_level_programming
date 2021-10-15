@@ -13,5 +13,13 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	return (*n |= 1 << index);
+	int l;
+
+	l = (*n |= 1 << index);
+
+	if (l == '\0')
+	{
+		return (-1);
+	}
+	return (l);
 }
