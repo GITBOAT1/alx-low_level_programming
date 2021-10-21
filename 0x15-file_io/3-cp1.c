@@ -6,8 +6,8 @@
 */
 void op_cp(char *file, char *file1)
 {
-	int fd  = open(file, O_RDONLY), size = 1024, l = 0, c, c1;
-	int fd1 = open(file1, O_CREAT | O_APPEND | O_WRONLY, 0666);
+	int fd  = open(file, O_RDONLY), size = 1024, c, c1;
+	int fd1 = open(file1, O_CREAT | O_APPEND | O_RDWR, 0664);
 	char *r_buf;
 	ssize_t r, w;
 
@@ -21,7 +21,7 @@ void op_cp(char *file, char *file1)
 	while (r != -1)
 	{
 		r = read(fd, r_buf, size);
-		w = write(fd1, r_buf, r);
+		w = write(fd1, r_buf, r + 1);
 
 		if (w == -1)
 		{
