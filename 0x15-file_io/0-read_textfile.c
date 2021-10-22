@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include "_putchar.c"
+#include "print.c"
 
 /**
  * read_textfile - printout what has bee read
@@ -10,12 +11,12 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd = open(filename, O_RDONLY);
-	int *buf;
-	size_t i;
+	char *buf;
+	int i;
 
 	buf = malloc(letters + 1);
 
-	if ((fd == -1) || (!filename))
+	if ((fd == -1) || (filename == NULL))
 	{
 		return (0);
 	}
@@ -23,12 +24,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 
 	read(fd, buf, letters);
-	buf[letters + 1] = '\0';
+	buf[letters - 1] = '\0';
 
 
-	i = write(1,  &buf, letters);
-
+	i = print1(buf);
+	if (i == (-1))
+		return (0);
 	free(buf);
 	close(fd);
-	return (i);
+	return (i + 1);
 }
