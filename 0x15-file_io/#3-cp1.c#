@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * op_cp - open file read and duplicate
  * @file: file to read from
@@ -7,7 +8,7 @@
 void op_cp(char *file, char *file1)
 {
 	int fd  = open(file, O_RDONLY), size = 1024, c, c1;
-	int fd1 = open(file1, O_CREAT | O_TRUNC | O_RDWR, 0664);
+	int fd1 = open(file1, O_CREAT | O_APPEND | O_RDWR, 0664);
 	char *r_buf;
 	ssize_t r, w;
 

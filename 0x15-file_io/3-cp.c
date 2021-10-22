@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
+#include "3-cp1.c"
+#include "_putchar.c"
+#include "err.c"
 
 /**
  * main - check the code
