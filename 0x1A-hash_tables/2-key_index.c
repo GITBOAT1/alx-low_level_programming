@@ -4,6 +4,7 @@
  * key_index - we generate a position for the key not more the size
  * @key: string to convert to key;
  * @size: the array size
+ *Return: the keyed value
 */
 
 
