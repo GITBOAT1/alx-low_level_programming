@@ -1,0 +1,16 @@
+#include "hash_tables.h"
+
+/**
+ *
+*/
+
+typedef unsigned long int uli;
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
+{
+	uli a = hash_djb2(key), t;
+
+	print("the %s is keyed to (%ul) \n", key, size);
+	t = a % size;
+	printf("current key %ul \n", t);
+
+}
