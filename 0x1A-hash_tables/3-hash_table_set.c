@@ -2,6 +2,7 @@
 
 /**
  * hash_table_set - this is where we store the valuse and keys
+ * @ht: the head
  * @key: for the index
  * @value: stores the valuse
  * Return: Always EXIT_SUCCESS.
@@ -25,6 +26,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			return (0);
 		}
+		ht->size = sizeof(ht);
 		tmp = ht->array[k];
 		while (tmp != NULL)
 			tmp = tmp->next;
@@ -34,6 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[k] = tmp;
 		return (1);
 	}
+	ht->size = sizeof(ht);
 	ht->array[k]->key = (char *)key;
 	ht->array[k]->value = (char *)value;
 	ht->array[k]->next = NULL;
