@@ -13,6 +13,7 @@ int main(void)
     hash_table_t *ht;
 
     ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
+    hash_table_set(ht, "C", "is fun");
+    printf(" the size is : %lu\n", ht->size);
     return (EXIT_SUCCESS);
 }
