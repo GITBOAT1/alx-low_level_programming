@@ -1,48 +1,52 @@
 #include "hash_tables.h"
 /**
- * hash_table_set - this is where we store the valuse and keys
- * @ht: the head
- * @key: for the index
- * @value: stores the valuse
- * Return: Always EXIT_SUCCESS.
+ * hash_table_set - set hash table
+ * @ht: pointer
+ * @key: string for the key
+ * @value: value of key
+ * Return: 0 if failed, 1 if success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int k;
-	hash_node_t *node = malloc(sizeof(hash_node_t)), *tmp;
+	hash_node_t *new;
+	hash_node_t *tmp;
+	unsigned int index;
 
-
-	if (key == NULL || strlen(key) == 0)
+	if (ht == NULL || strlen(key) == 0)
 		return (0);
-	k = key_index((unsigned char *)key, sizeof(ht));
 
-	if (ht->array[k] == NULL)
+	index = key_index((const unsigned char *) key, ht->size);
+	tmp = ht->array[index];
+
+	if (ht->array[index] == NULL)
 	{
-		node = malloc(sizeof(hash_node_t));
-		if (!node)
-		return (0);
-
-		node->key = strdup(key);
-		node->value = strdup(value);
-		node->next = NULL;
-		ht->array[k] = node;
+		new = malloc(sizeof(hash_node_t *));
+		if (new == NULL)
+			return (0);
+		new->key = strdup(key);
+		new->value = strdup(value);
+		new->next = NULL;
+		ht->array[index] = new;
 		return (1);
 	}
-	
 
-
-	if (!node)
-		return (0);
-
-	tmp = ht->array[k];
-	while (tmp != NULL)
+	while (tmp)
+	{
+		if (strcmp(tmp->key, key) == 0)
+		{
+			free(tmp->value);
+			tmp->value = strdup(value);
+			return (1);
+		}
 		tmp = tmp->next;
+	}
 
-	tmp->key = strdup(key);
-	tmp->value = strdup(value);
-	tmp->next = ht->array[k];
-	ht->array[k] = tmp;
+	new = malloc(sizeof(hash_node_t *));
+	if (new == NULL)
+		return (0);
+	new->key = strdup(key);
+	new->value = strdup(value);
+	new->next = ht->array[index];
+	ht->array[index] = new;
 	return (1);
-	
-
 }
