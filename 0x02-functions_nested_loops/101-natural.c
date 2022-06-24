@@ -15,16 +15,9 @@ int main(void)
 		if ((i % three == 0) || (i % five == 0))
 		{
 			value = value + i;
-			/**
-			if (i != 1023)
-			{
-				printf(", ");
-			}
-			*/
-
 		}
 	}
-	printf("%d", value);	
+	printf("%d", value);
 	printf("\n");
 	return (0);
 }
