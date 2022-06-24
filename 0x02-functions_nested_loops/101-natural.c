@@ -8,20 +8,23 @@
 
 int main(void)
 {
-	int count = 1025, three = 3, five = 5, i;
+	int count = 1025, three = 3, five = 5, i, value = 0;
 
 	for (i = 1; i < count; i++)
 	{
 		if ((i % three == 0) || (i % five == 0))
 		{
-			printf("%d", i);
+			value = value + i;
+			/**
 			if (i != 1023)
 			{
 				printf(", ");
 			}
+			*/
 
 		}
 	}
+	printf("%d", value);	
 	printf("\n");
 	return (0);
 }
