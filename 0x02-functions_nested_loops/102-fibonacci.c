@@ -10,16 +10,16 @@
 
 int main(void)
 {
-	int fib = 0;
+	long int fib = 0;
 	int i, old = 1, new = 2;
 
-	printf("%d, %d\n", old, new);
+	printf("%d, %d, ", old, new);
 	for (i = 1; i < 51; i++)
 	{
 		fib = old + new;
 		old = new;
 		new = fib;
-		printf("%d", abs(fib));
+		printf("%ld", labs(fib));
 		if (i != 50)
 		{
 			printf(", ");
