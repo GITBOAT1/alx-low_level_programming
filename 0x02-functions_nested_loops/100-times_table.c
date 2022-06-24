@@ -33,6 +33,8 @@ void print_times_table(int n)
 						_putchar(' ');
 						_putchar(' ');
 					}
+					else if (((table) >= 0 && (table) <= 98) && ((i + 1) * j >= 100))
+						_putchar(' ');
 					else if (((table) >= 0 && (table) <= 98) && ((i + 1) * j >= 9))
 					{
 						_putchar(' ');
