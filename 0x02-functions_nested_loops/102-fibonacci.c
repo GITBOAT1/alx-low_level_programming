@@ -11,16 +11,16 @@
 int main(void)
 {
 	long int fib = 0;
-	int i, old = 1, new = 2;
+	long int i, old = 1, new = 2;
 
-	printf("%d, %d, ", old, new);
-	for (i = 1; i < 51; i++)
+	printf("%ld, %ld, ", old, new);
+	for (i = 1; i < 49; i++)
 	{
 		fib = old + new;
 		old = new;
 		new = fib;
 		printf("%ld", labs(fib));
-		if (i != 50)
+		if (i != 48)
 		{
 			printf(", ");
 		}
