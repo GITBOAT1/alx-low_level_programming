@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ * main - prints the first 50 Fibonacci numbers, 
+ * starting with 1 and 2, followed by a new line.
+ *
+ * Return: 0;
+ */
+
+int main (void)
+{
+	int fib = 1, i, sum, limit = 50;
+	printf("%d, %d\n", 1, 2);
+	for (i = 2; i < 50; i + fib)
+	{
+		printf("%d", fib);
+		if (i != 50){
+			printf(", ");
+	}
+}

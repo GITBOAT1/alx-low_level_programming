@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - print out multiples of 3 or 5 below 1024
+ *
+ * Return: 0;
+ */
+
+int main(void)
+{
+	int count = 1025, three = 3, five = 5, i;
+
+	for (i = 1; i < count; i++)
+	{
+		if ((i % three == 0) || (i % five == 0))
+		{
+			printf("%d", i);
+			if (i != 1023)
+			{
+				printf(", ");
+			}
+
+		}
+	}
+	printf("\n");
+	return (0);
+}
