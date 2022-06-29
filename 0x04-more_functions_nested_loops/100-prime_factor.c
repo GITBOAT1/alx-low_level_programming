@@ -3,7 +3,7 @@
 /**
  * main - find a prime numbers and print the largest prime
  *
- * Retrun: 0 on success
+ * Return: 0 on success
  *
  */
 
