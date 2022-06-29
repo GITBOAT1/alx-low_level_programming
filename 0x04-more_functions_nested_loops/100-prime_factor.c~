@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main- find a prime numbers and print the largest prime
+ * Retrun: 0
+ *
+ */
+
+int main(void)
+{
+	long i, prime, lprime;
+	long num = 612852475143;
+
+	for (i = 0; i < num; i++)
+	{
+		if (num % i == 0)
+		{
+			num = num / i;
+		}
+		lprime = i;
+		printf("%ld\n", lprime);
+	}
+	printf("lagerst prime %ld\n", lprime);
+	return(0);
+}
