@@ -9,19 +9,20 @@
 void print_diagonal(int n)
 {
 
-	int a, b, c;
+	int a, c;
 
-	b = 0;
-	if (n <= 0)
-		_putchar('\n');
-	for (a = 0; a < n; a++)
+	if (n >= 1)
 	{
-		b = b + 1;
-		for (c = 0; c < b; c++)
+		for (a = 0; a < n; a++)
 		{
-			_putchar(' ');
+			for (c = 0; c < a; c++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
 		}
-		_putchar('\\');
-		_putchar('\n');
 	}
+	else if (n <= 0)
+		_putchar('\n');
 }
