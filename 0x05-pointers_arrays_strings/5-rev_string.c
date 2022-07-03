@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * print_rev - check the code
+ * rev_string  - check the code
  * @s: the is the suppled words to be reversed
  * Return: Always 0.
  */
