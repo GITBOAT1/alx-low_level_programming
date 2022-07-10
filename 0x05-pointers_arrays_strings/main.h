@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-
+char *_strcpy(char *dest, char *src);
 void print_rev(char *s);
 int _putchar(char c);
 void _puts(char *str);
