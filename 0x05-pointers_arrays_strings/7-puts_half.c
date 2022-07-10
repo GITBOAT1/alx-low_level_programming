@@ -24,7 +24,11 @@ void puts_half(char *str)
 	}
 	else
 	{
-		printf("%c", str[strlen(str) - 1]);
+		i = (i + 1) / 2;
+		for (j = 1; j < i; j++)
+		{
+			printf("%c", str[j + i]);
+		}
 	}
 	printf("\n");
 }
