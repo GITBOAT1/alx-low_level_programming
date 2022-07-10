@@ -25,10 +25,15 @@ void puts_half(char *str)
 	else
 	{
 		i = (i / 2) + 1;
+
 		for (j = 0; j < i; ++j)
 		{
-			printf("%c", str[j + i]);
+			if (str[j + i] != '\0')
+			{
+				printf("%c", str[j + i]);
+			}
 		}
+
 	}
 	printf("\n");
 }
