@@ -24,8 +24,8 @@ void puts_half(char *str)
 	}
 	else
 	{
-		i = (i / 2);
-		for (j = 0; j < i; j++)
+		i = (i / 2) + 1;
+		for (j = 0; j < i; ++j)
 		{
 			printf("%c", str[j + i]);
 		}
