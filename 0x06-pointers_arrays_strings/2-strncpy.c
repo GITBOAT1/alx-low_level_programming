@@ -1,47 +1,31 @@
+#include <stdio.h>
 #include "main.h"
+#include <string.h>
+
 /**
- * _strncpy - concatenate strings
- * @dest: string to concatenate
- * @src: source for copying
- * @n: lengthe to copy
+ * _strncpy - copy a string using the number of time supplied by the  n
+ * @dest: the destination string
+ * @src : the source to which we will append.
+ * @n: the number of times we need to append the src
  * Return: Always 0.
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i;
 
-	int len, len2, i;
-
-	char j[100];
-
-	len = 0;
-	while (*(dest + len) != '\0')
+	if (n != 0)
 	{
-		len++;
-	}
-
-	while (*(src + len2) != '\0')
-	{
-		len2++;
-
-	}
-	for (i = 0; i < n; i++)
-	{
-		j[i] = src[i];
-		if (src[i] == '\0')
+		for (i = 0; i < n; i++)
 		{
-			break;
-
+			if (i == n)
+			{
+				break;
+			}
+			dest[i] = src[i];
 		}
-	}
-	/**
-	 * add the secon src char to dest
-	* @i: for increment
-	* @j: for storing the current val
-	*/
-	for (i = 0; i < n; i++)
-	{
-		dest[i] = j[i];
+		return (dest);
 	}
 	return (dest);
 }
+
