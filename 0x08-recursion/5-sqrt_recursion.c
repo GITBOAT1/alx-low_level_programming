@@ -4,7 +4,7 @@
  * _sqrt_recursion_helper - check the code
  * @n: numer to make a squre root
  * @low: low
- * @high:
+ * @high: using binary search
  * Return: Always 0.
  */
 
